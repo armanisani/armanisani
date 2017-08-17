@@ -5,22 +5,30 @@
     <title>Alkaline Now</title>
     <!-- Materialize-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abel" />
   </head>
   <style media="screen">
-    .nav-wrapper {background-color: rgb(0, 73, 175); background-image: url('droplets.jpg'); background-position-y: -14em; background-size: cover; }
-    .page-footer {background-color: rgb(0, 73, 175)}
+  h1, h2, h3, h4, h5, h6 {font-family: 'Raleway'}
+  p, span, strong, ul, li {font-family: 'Abel'}
+    .our-story li:before {content: "•"; font-size:20px; color: black}
+    .nav-wrapper {background-color: rgb(89, 145, 222); background-position-y: -14em; background-size: cover; }
+    .page-footer {background-color: rgb(89, 145, 222)}
     div.section {height: auto; padding: 0 5em}
     .banner img {height: 26vw; margin:2em 0 0 4em;}
     .banner-content {display: inline;}
-    .banner-content h1.header {font-weight:600; margin-top: 0;}
-    .banner {height: 32vw !important; background-color: #c9d8f7; background: url('waterwave.png') no-repeat; background-size: cover; background-position-y: -4em;}
-    .brand-logo {padding-left: 1em !important; font-family: Roboto,'helvetica neue',helvetica,'Roboto',sans-serif;}
-    .header {font-family: Roboto,'helvetica neue',helvetica,'Roboto',sans-serif; font-size: 35px; text-align: center; padding: 35px 0 10px 0; font-weight: 200; margin-top: 0}
-    .our-story {height: 40vw !important; background-color: rgb(230, 241, 255);}
-    #story-video {height: 23vw; margin-left: 10vw; width: 41vw;}
-    #story-content {width: 43vw; float: right; display: inline-block; margin-right: 2em;}
-    .order {float: right; margin:1em 4em 0 0; background-color: black; width: 7em; text-align: center; padding: 5px; font-size: 20px; }
+    .banner-content h1.header {font-weight:600; margin-top: 0; border-bottom: none;}
+    .banner {height: 32vw !important; background-color: #c9d8f7; background: url('waterwave.png') no-repeat; background-size: cover; background-position-y: -4em; }
+    .brand-logo {padding-left: 1em !important;}
+    .header { font-size: 4vw; text-align: center; padding: 35px 0 10px 0; font-weight: 200; margin-top: 0; border-bottom: 1px dotted black; width: auto; display: block;}
+    .our-story {height: auto !important; background-color: rgb(230, 241, 255);}
+    #story-video {height: 23vw; width: 41vw;}
+    #story-content {width: 43vw; float: right; display: inline-block; }
+    #story-content h1 {font-size:2rem; text-align: center; margin: 0}
+    .order { margin:0 auto; display: block; background-color: black; width: 17em; text-align: center; padding: 5px; font-size: 20px; }
     #tap-water img {height: 16em;}
     .discovery {padding-bottom: 2em;}
     #reverse .image-container {padding: 2em 0 0 5em !important;}
@@ -28,10 +36,19 @@
     #bottle-water .image-container {padding-left: 4em;}
     .user div:last-of-type {padding: 2em 0 0 11em;}
     .user div:last-of-type p {margin: 0;}
+    body > div.our-story.section.z-depth-5 > div:nth-child(3) {padding-bottom: 4em;}
     .user-review {border-left: 1px dotted black; padding-left: 20px;}
     .green {padding: 0 !important; height: 10px; width: 10px; display: inline-block; margin-right: 10px;}
     .reviews .s12 {text-align: center; margin-top: 2em;}
     .reviews .s12 a {background-color: black; padding: 0.6em;}
+    .science img {float: left; padding: 1em;}
+    .science p {padding-top: 1em; padding-bottom: 3vw;}
+    .little-header {font-weight: 100; text-align: center; font-size:3vw}
+    p {text-align: justify}
+    body > div.science.section.z-depth-5 > img:nth-child(4) {float: right !important; width: 47vw;}
+    .results img {height: 62vw;}
+    .results {text-align:center;}
+    #celeb-list {width: 17vw; display: inline-block; position: relative; left: 2vw; top: -7em}
   </style>
   <body>
     <div class="navbar-fixed">
@@ -55,39 +72,83 @@
       <!-- <img src="product_sd501.png" alt="" /> -->
       <div class="banner-content">
         <h1 class="header ">Change your Water, Change your Life</h1>
+        <ul>
+          <li>Anti-Oxidation</li>
+          <li>Micro-Clustering</li>
+          <li>Alkalinization</li>
+        </ul>
       </div>
       <!-- <img src="glass.jpg" alt="Clean Water" /> -->
     </div>
     <!-- body -->
-    <div class="our-story z-depth-5">
+    <div class="our-story section z-depth-5">
       <h1 class="header">The Story Behind Alkalinized Water</h1>
+      <div class="row">
+
       <iframe id="story-video"width="560" height="315" src="https://www.youtube.com/embed/dYPV0KLouSc" frameborder="0" allowfullscreen></iframe>
       <div id="story-content">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <h1>The Benefits of Alkalinzed Water</h1>
+        <ul>
+        <li>Lubricates joints and muscles; our body is 70% water</li>
+        <li>Keeps our minds alert; the brain is over 70% water needing hydration to function</li>
+        <li>Helps the body absorb nutrients</li>
+        <li>Aids in circulation and digestion</li>
+        <li>Helps regulate body temperature</li>
+        <li>Detoxifies cells and the whole body</li>
+        <li>Improves blood pressure, decreases headaches, arthritic symptoms, back pain, and chronic illness symptoms</li>
+        </ul>
         <a class="order" href="#">ORDER NOW</a>
       </div>
+    </div>
     </div>
     <div class="results section">
       <h1 class="header">Real Users Real Results </h1>
     </div>
-    <div class="discovery z-depth-5">
+    <!-- celeb -->
+    <div class="results section  z-depth-5">
+      <h1 class="header">Celebrities who drink Kangen&reg; Water</h1>
+      <div class="">
+        <img class="materialboxed" src="kangen-celebrities.png" alt="Celebrity's that use a Kangen Machine">
+      </div>
+      <!-- <ul id="celeb-list">
+      <li><strong>List of Celebrities</strong></li>
+      <li>Barack Obama</li>
+      <li>Beyonce</li>
+      <li>Bill Gates</li>
+      <li>Brad Pit</li>
+      <li>Carlos Santanna</li>
+      <li>Chuck Norris</li>
+      <li>Donald Trump</li>
+      <li>Dr Hiromi Shinya</li>
+      <li>Jack Nicholson</li>
+      <li>Jennifer Lopez</li>
+      <li>Leonardo Dicaprio</li>
+      <li>Madonna</li>
+      <li>Jillian Michaels</li>
+      <li>Pat Boone</li>
+      <li>Ron Perlman</li>
+      <li>Steven Tyler</li>
+      <li>Tobby Kieth</li>
+      <li>Tony Robbins</li>
+    </ul> -->
+    <h3>So why aren't you?</h3>
+    </div>
+    <div class="discovery section">
       <!-- science/dr -->
       <h1 class="header">Common Water Sources</h1>
-      <div class="section row" id="tap-water">
+      <div class="row" id="tap-water">
       <div class="col s6 image-container">
         <img src="tap.jpg" alt="" />
       </div>
       <div class="col s6">
-       <p> Tap water is a healthier option than soft drinks. But according to the Environmental Working Group, there have been 315 pollutants found in America's tap water since 2004, and over half of these pollutants are completely unregulated and can legally exist in any amount</p>
+       <p><strong>Tap water</strong> is a healthier option than soft drinks. But according to the Environmental Working Group, there have been 315 pollutants found in America's tap water since 2004, and over half of these pollutants are completely unregulated and can legally exist in any amount</p>
        <p>At the current levels of contamination, the public is starting to question the quality of tap water and wonders if it is safe enough to drink. Based on these facts, it's no wonder that the demand for Kangen Water® is constantly increasing.</p>
        <a href="http://www.ewg.org/tap-water/whats-in-yourwater">Reference - EWG</a>
       </div>
       </div>
-      <div class="section row" id="bottle-water">
+      <div class="row" id="bottle-water">
         <div class="col s6">
-        <p>Bottled water is not necessarily healthier than tap water and yet it costs much more! Although associated with healthy water, bottled water is not guaranteed to be any healthier than tap water. Often the only difference is the added minerals which have no proven health benefits.</p>
+        <p><strong>Bottled water</strong> is not necessarily healthier than tap water and yet it costs much more! Although associated with healthy water, bottled water is not guaranteed to be any healthier than tap water. Often the only difference is the added minerals which have no proven health benefits.</p>
         <p>A four-year study by the Natural Resources Defense Council shows that 1/3 of the bottled water tested contains levels of contamination which exceed allowable limits. Bottled water can also be slightly acidic, which may affect your body's pH balance. Finally, the environmental impact caused by the production and disposal of plastic bottles is harmful to our ecosystem.</p>
         <a href="http://www.nrdc.org/water/drinking/bw/chap3.asp">Reference - NRDC</a> | <a href="http://www.nrdc.org/water/drinking/bw/figure4.html"> Contaminants Found in Bottled Water</a>
       </div>
@@ -95,14 +156,37 @@
         <img src="plastic.jpg" alt="" />
       </div>
       </div>
-      <div class="section row" id="reverse">
+      <div class="row" id="reverse">
         <div class="col s6 image-container">
           <img src="osmosis.gif" alt="" />
         </div>
         <div class="col s6">
-        <p>Reverse Osmosis is a filtering process which may be effective in areas that do not receive municipally treated water and is commonly used in bottled water facilities. The problem with this process is that dangerous chemicals like pesticides, herbicides, and chlorine are molecularly smaller than water and can pass freely through the filter. Reverse osmosis removes healthy, naturally occurring water minerals. These minerals not only provide good taste, they also serve a vital function in the body's system. When stripped of these minerals, water can be unhealthy. Also, 2-3 gallons of water are wasted for every gallon of purified water produced.</p>
+        <p><strong>Reverse Osmosis</strong> is a filtering process which may be effective in areas that do not receive municipally treated water and is commonly used in bottled water facilities. The problem with this process is that dangerous chemicals like pesticides, herbicides, and chlorine are molecularly smaller than water and can pass freely through the filter. Reverse osmosis removes healthy, naturally occurring water minerals. These minerals not only provide good taste, they also serve a vital function in the body's system. When stripped of these minerals, water can be unhealthy. Also, 2-3 gallons of water are wasted for every gallon of purified water produced.</p>
       </div>
       </div>
+    </div>
+    <!-- science -->
+    <div class="science section z-depth-5">
+      <h1 class="header">Science</h1>
+      <img src="dr.jpg" alt="">
+      <p>
+<strong>Top Researcher</strong> in the world, Dr. Mu Shik Jhon, PhD, says that “aging is a loss of Hexagonal Water from organs, tissues and cells, and an overall decrease in total body water.” He goes on to say that “biological organisms prefer Hexagonal Water — that this specific structure both directly and indirectly supports biological functions.”
+<br><br>
+I’d like to share with you what I’ve learned about hexagonal water, and how the Japanese have improved on it. In a nutshell, hexagonal water is only found in nature in the high mountains where it is formed by glacier ice or snow melt. This creates water that is a 6-sided, or hexagonal structure, and approximately 1/3 the size of most water. As this hexagonal water flows down out of the mountains into rivers, streams, pipes, holding tanks and bottles, (you get the picture) the action of the sun shining on this water turns it into a pentagonal shape (5 sided) and the molecules clump in groups of 15 to 20 molecules.
+<br><br>
+This pentagonal water is what most of us drink and it is not readily absorbed and utilized by the body. Let me give you an example. If you drink 20 to 30 ounces of “normal” water (pentagonal structured water) at one time it will feel like your stomach is like a water balloon with water sloshing around for some time because the body cannot absorb it quickly and easily.
+<br><br>
+Drinking the same amount of hexagonal water will not produce that same feeling in the stomach for any length of time, because it absorbs so much more readily. Hexagonal Kangen water® also contains two additional characteristics. The first is that it is alkaline or acidic (depending on what you tell the machine to make) and in seconds, it is 3 to 8 times higher in anti-o******** than green tea!</p>
+      <img src="antioxidant.jpg" alt="">
+      <p>
+<strong>Antioxidants</strong> This is the mechanism behind antioxidants. They donate electrons to free radicals, which neutralizes them and prevents them from causing harm. Bottom Line: Antioxidants are molecules that fight damage by free radicals, unstable molecules that can harm cellular structures. <br><br>The body has to n******* these acids in order to move them out of the interstitial fluids. If it does that quickly, you won’t feel pain, but, if it takes longer to n******** and move them these acids will cause inflammation and pain. Drinking hexagonal Kangen water® has proven to be one of the easiest ways to assist the body in effectively moving these wastes. There are a number of water ionizers on the market, and I personally, have purchased 7 of them and experimented with the water they produce.
+<br><br>
+It was not until I was introduced to the ionizers made by Enagic®, Inc. that I found ionizers that were able to produce hexagonal water at a high enough percentage that almost everyone who drank the water noticed a significant difference in how they felt. A water ionizer is an appliance that sits on the counter (in most cases) and attaches to your water supply and your homes electricity. When running water is sent through the machine, it goes through a high end three stage filter and then into the electrolysis chamber, where electricity bombards the water molecules and changes them from pentagonal molecules into hexagonal molecules. The water is also split into acidic and alkaline water. </p>
+    </div>
+    <h1 class="little-header">  Active Hydrogen</h1>
+<p>“<strong>Hydrogen-Rich Water</strong>” or <strong>hydrogenated water</strong> contains active hydrogen ions that act as powerful antioxidants in your body. The ions help eliminate oxygen free radicals that contribute to the development of illness and ultimately are responsible for the aging process.</p>
+<p>Our body takes in the H2 and convert it into hydrogen anions, H-. or commonly termed as active hydrogen. Active Hydrogen is a powerful anti-oxidant as it is able to remove the active oxygen in our body that is known to be the cause of many types of chronic diseases. Molecular hydrogen also has anti-inflammatory effect besides its antioxidant properties. Inflammation is a silent killer that caused many chronic diseases. Hydrogen has also been found to have anti-tumor effect.</p>
+<p>"We recently learned that the most important number related to our water is not pH . In fact, the most important number in health and wellness may not be your PSA, cholesterol or blood pressure, or ORAC. The most important number is the Number 1 on the Table of Periodic Elements, "Hydrogen." To be more specific diatomic molecular hydrogen. That tiny, pervasive, immensely powerful hydrogen.”</p>
     </div>
     <!-- product -->
     <div class="machine section">
@@ -112,8 +196,10 @@
     <div class="press section z-depth-5">
       <h1 class="header">The Press</h1>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/LO6VCudb0qs" frameborder="0" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/wTROvy5442k" frameborder="0" allowfullscreen></iframe>
     </div>
-    <div class="row reviews section">
+    <!-- reviews -->
+    <div class="row reviews section ">
       <h1 class="header">Reviews</h1>
       <div class="user">
         <div class="col s7 push-s5">
@@ -191,3 +277,9 @@
 </footer>
   </body>
 </html>
+<script type="text/javascript">
+$(document).ready(function(){
+ $('.materialboxed').materialbox();
+});
+
+</script>
